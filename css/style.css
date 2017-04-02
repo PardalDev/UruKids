@@ -31,13 +31,21 @@ body {
 #menu ul li {
     list-style-type: none;
     display: inline;
-    padding: 17px 10px 0px 8px;
     background: black;
     font-size: 30px;
+    font-weight: bold;
 }
 
-#menu ul li:hover {
+#menu ul li a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding: 18px 10px 0px 8px;
+}
+
+#menu ul li a:hover {
     background-color: white;
+    color: black;
 }
 
 #container {
