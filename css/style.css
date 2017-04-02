@@ -12,13 +12,12 @@ body {
     text-align: center;
 }
 
-
-#menu{
-  border:1px solid black;
-  width: 100%;
-  height:50px;
-  background-color: black;
-  text-align: center;
+#menu {
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
 }
 
 #slide {
@@ -29,17 +28,17 @@ body {
     text-align: center;
 }
 
-#menu ul li{
-  list-style-type: none;
-  display: inline;
-  padding: 17px 10px 0px 8px;
-  background: black;
-  font-size: 30px;
-}
-#menu ul li:hover{
-  background-color: white;
+#menu ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 17px 10px 0px 8px;
+    background: black;
+    font-size: 30px;
 }
 
+#menu ul li:hover {
+    background-color: white;
+}
 
 #container {
     width: 100%;
