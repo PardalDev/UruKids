@@ -16,7 +16,7 @@ body{
   width: 100%;
   height:50px;
   background-color: black;
-  text-align:center;
+  text-align: center;
 }
 #slide{
   border:1px solid green;
@@ -31,4 +31,12 @@ body{
   height: 630px;
   background-color: black;
   text-align:center;
+}
+
+#menu ul li{
+  list-style-type: none;
+  display: inline;
+  padding: 3px 8px 3px 8px;
+  background: #99FF99;
+  font-size: 30px;
 }
