@@ -1,15 +1,17 @@
-body{
-	padding: 0px;
-	margin: 0px;
-	font-family: Arial;
-  background-color: white;
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+    background-color: white;
 }
-#header{
-  width: 100%;
-  height:150px;
-  background-color: white;
-  text-align:center;
+
+#header {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    text-align: center;
 }
+
 
 #menu{
   border:1px solid black;
@@ -18,19 +20,13 @@ body{
   background-color: black;
   text-align: center;
 }
-#slide{
-  border:1px solid green;
-  width: 100%;
-  height:250px;
-  background-color: green;
-  text-align:center;
-}
-#container{
-  border:1px solid green;
-  width: 100%;
-  height: 630px;
-  background-color: black;
-  text-align:center;
+
+#slide {
+    border: 1px solid green;
+    width: 100%;
+    height: 250px;
+    background-color: green;
+    text-align: center;
 }
 
 #menu ul li{
@@ -39,4 +35,19 @@ body{
   padding: 3px 8px 3px 8px;
   background: #99FF99;
   font-size: 30px;
+}
+
+#container {
+    width: 100%;
+    height: 630px;
+    background-color: black;
+    text-align: center;
+}
+
+#footer {
+    background: black;
+    height: 150px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
 }
