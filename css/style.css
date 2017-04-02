@@ -130,3 +130,7 @@ body {
     table-layout: fixed;
     text-align: center;
 }
+
+#footer table tr td a{
+    text-decoration: none;
+}
