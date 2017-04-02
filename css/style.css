@@ -79,7 +79,7 @@ body {
 
 #container {
     width: 90%;
-    height: 630px;
+    height: auto;
     background-color: black;
     text-align: center;
 }
@@ -104,7 +104,17 @@ body {
     background-color: red;
     border-radius: 50%;
 }
-
+#container #Bienvenida{
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+#container #Bienvenida #p1, #p2, #p3{
+    width: 100%;
+    background-color: darkgrey;
+    border: 5px solid grey; 
+    border-radius: 15%;
+}
 #footer {
     background: black;
     height: 150px;
