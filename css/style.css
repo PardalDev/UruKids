@@ -21,19 +21,42 @@ body {
 }
 
 #slide {
-    border: 1px solid green;
     width: 100%;
-    height: 250px;
+    height: 260px;
     background-color: green;
     text-align: center;
+}
+#slide #divButtonSlide{
+    width: 100%;
+    height: 260px;
 }
 
 #slide img {
     width: 100%;
-    height: 250px;
+    height: 260px;
 }
-.mySlides {display:none;}
 
+#slide #divButtonSlide #buttonBack{
+    background-color: transparent;
+    color: #202020;
+    border: none;
+    font-size: 195px;
+}
+#slide #divButtonSlide #buttonForward{
+    background-color: transparent;
+    color:#202020;
+    border: none;
+    font-size: 195px;
+}
+#slide #divButtonSlide #buttonBack:hover{
+    background-color: red;
+    opacity: 0.5;
+}
+#slide #divButtonSlide #buttonForward:hover{
+    background-color: red;
+    opacity: 0.5;
+}
+   
 #menu ul li {
     list-style-type: none;
     display: inline;
@@ -55,10 +78,26 @@ body {
 }
 
 #container {
-    width: 100%;
+    width: 90%;
     height: 630px;
     background-color: black;
     text-align: center;
+}
+#container #characterSelection ul li {
+    list-style-type: none;
+    display: inline;
+    background: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+#container #characterSelection ul li a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding: 18px 10px 0px 8px;
+}
+#container #characterSelection ul li a:hover {
+    background-color: red;
 }
 
 #footer {
