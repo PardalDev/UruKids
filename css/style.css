@@ -31,6 +31,7 @@ body {
     width: 100%;
     height: 250px;
 }
+.mySlides {display:none;}
 
 #menu ul li {
   list-style-type: none;
