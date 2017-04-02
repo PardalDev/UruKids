@@ -2,7 +2,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: Arial;
-    background-color: white;
+    background-color: black;
 }
 
 #header {
@@ -32,10 +32,14 @@ body {
 #menu ul li{
   list-style-type: none;
   display: inline;
-  padding: 3px 8px 3px 8px;
-  background: #99FF99;
+  padding: 17px 10px 0px 8px;
+  background: black;
   font-size: 30px;
 }
+#menu ul li:hover{
+  background-color: white;
+}
+
 
 #container {
     width: 100%;
