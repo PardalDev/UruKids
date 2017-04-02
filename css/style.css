@@ -83,11 +83,15 @@ body {
     background-color: black;
     text-align: center;
 }
+#container #characterSelection{
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
 #container #characterSelection ul li {
     list-style-type: none;
     display: inline;
     background: black;
-    font-size: 30px;
     font-weight: bold;
 }
 #container #characterSelection ul li a {
@@ -98,6 +102,7 @@ body {
 }
 #container #characterSelection ul li a:hover {
     background-color: red;
+    border-radius: 50%;
 }
 
 #footer {
