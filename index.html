@@ -10,11 +10,7 @@
     <!--charset para escribir en español -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="shortcut icon" href="resources/imagenes/Uruk.ico">
-    <script type="text/javascript">
-        function addImage(){
-            document.getElementById('slide').innerHTML = "OK!";
-        }
-    </script>
+
 </head>
 
 <body>
@@ -31,8 +27,15 @@
                 <li> <a href="html/xtras.html">X-TRAS</a></li>
             </ul>
         </div>
-        <div id="slide" class="Slider">
+        <div id="slide" class="w3-content w3-display-container" >
+            <img class="mySlides" src="resources/Imagenes/Canales/BigChannel.png" >
+            <img class="mySlides" src="resources/Imagenes/Canales/Boomerang.png" >
+            <img class="mySlides" src="resources/Imagenes/Canales/Cartoon_Network.png" >
+            <img class="mySlides" src="resources/Imagenes/Canales/Disney_XD.png" >
+            <img class="mySlides" src="resources/Imagenes/Canales/FOX_Kids.png" >
 
+          <!--  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button> -->
         </div>
         <div id="container" class="divContainer">
 
@@ -54,10 +57,46 @@
                     </td>
                 </tr>
             </table>
-
-
-
         </div>
+
+<!--            <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+                x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+ -->
+<script>
+    var slideIndex = 0;
+    CambiarImagen();
+
+    function CambiarImagen() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {
+            slideIndex = 1
+        } 
+        x[slideIndex-1].style.display = "block"; 
+        setTimeout(carousel, 5000); // Cambiar la imagen cada 5 segundos
+    }   
+</script>
 </body>
 
 </html>
