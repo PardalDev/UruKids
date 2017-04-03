@@ -93,15 +93,59 @@ body {
     display: inline;
     background: black;
     font-weight: bold;
+    padding-top: 20px;
 }
 #container #characterSelection ul li a {
     text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
     padding: 18px 10px 0px 8px;
 }
-#container #characterSelection ul li a:hover {
+#container #characterSelection ul li:hover {
     background-color: red;
+    border-radius: 50%;
+}
+
+#container #characterSelection ul #Uno:hover {
+    background-color: red;
+    border-radius: 50%;
+}
+#container #characterSelection ul #Dos:hover {
+    background-color: gold;
+    border-radius: 50%;
+}
+#container #characterSelection ul #Tres:hover {
+    background-color: green;
+    border-radius: 50%;
+}
+#container #characterSelection ul #Cuatro:hover {
+    background-color: blue;
+    border-radius: 50%;
+}
+#container #characterSelection ul #Seis:hover {
+    background-color: white;
+    border-radius: 50%;
+}
+#container #characterSelection ul #Siete:hover {
+    background-color: orange;
+    border-radius: 50%;
+}
+#container #characterSelection ul #Ocho:hover {
+    background-color: lightseagreen;
+    border-radius: 50%;
+}
+#container #characterSelection ul #Nueve:hover {
+    background-color: purple;
+    border-radius: 50%;
+}
+#container #characterSelection ul #Diez:hover {
+    background-color: silver;
+    border-radius: 50%;
+}
+#container #characterSelection ul #Once:hover {
+    background-color: saddlebrown;
+    border-radius: 50%;
+}
+#container #characterSelection ul #Doce:hover {
+    background-color: lime;
     border-radius: 50%;
 }
 #container #Bienvenida{
