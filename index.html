@@ -10,15 +10,45 @@
     <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
     <!--charset para escribir en español -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript">
+        function registro(){
+            function Usuario(user, password, age, character1, character2){
+                this.user=user;
+				this.password=password;
+				this.age=age;
+                this.character1=character1;
+                this.character2=character2;
+            }
+            var u = prompt("No estas registrado, por favor registra tu nombre de usuario: " );
+            while (u=="" || u.length < 4 ){
+                var u = prompt("Por favor ingresa un nombre valido, tu nombre debe tener al menos 4 letras:" );
+            }
+            var p = prompt("Ingresa tu password de 4 digitos: " );
+            while (p=="" || p.length < 4  || p.length > 4){
+                var p = prompt("Tu password debe tener exactamente 4 digitos:" );
+            }
+            var a = prompt("Confirma que eres mayor de 18 a&#241;os ingresando tu edad a continuacion: " );
+            while (a=="" || parseInt(a) == NaN ){
+                    var a = prompt("Tu edad no debe contener caracteres, unicamente ingresa el numero correspondiente a tu edad:" );
+                    if(parseInt(a) < 18 ){
+                        var a = prompt("Debes ser mayor de 18 a&#241;os, ingresa nuevamente tu edad:" );
+                    }
+            }
+            var c1 = prompt("Elige 1 de los siguientes personajes: 1- Goku, 2-Sailor Moon: " );
+            var c2 = prompt("Elige el 2do personaje: " );
+
+            var userObject = new Usuario(u, p, a, c1, c2);
+            var result = prompt("El objeto es: " + userObject.user );
+        }
+	</script>
     <link rel="shortcut icon" href="resources/imagenes/Uruk.ico">
 </head>
-
 <body>
     <div id ="commands" >
         <table id="commandTable" style="float: right;">
             <tr>
                 <td>
-                    <a href="https://www.facebook.com"><img src="resources/Imagenes/register.png" width="32px" onmouseover="this.src='resources/Imagenes/register2.png';" onmouseout="this.src='resources/Imagenes/register.png';" /></a>
+                    <a><img src="resources/Imagenes/register.png" width="32px" onmouseover="this.src='resources/Imagenes/register2.png';" onmouseout="this.src='resources/Imagenes/register.png';" onclick="registro()"/></a>
                 </td>
                 <td>
                     Register
@@ -114,19 +144,16 @@
                 </ul>
             </div>
             <div id="Bienvenida" style="float: left; margin-left: 0%;" >
-               <p id="p1">Esta pagina esta dedicada a blablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablabl
-               ablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalbla
-               blablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalbla
-               blablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalbla</p>
-               <p id="p2">Esta pagina esta dedicada a blablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablabl
-               ablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalbla
-               blablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalbla
-               blablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalbla</p>
-               <p id="p3">Esta pagina esta dedicada a blablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablabl
-               ablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalbla
-               blablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalbla
-               blablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalblablablablalbalblalblablalbla
-               blablabl</p>
+               <p id="p1">Los ni&#241;os de hoy nacen con una accesibilidad diferente a la tecnolog&#237;a. Esto les facilita el acceso a los dibujos animados que hace algunas d&#233;cadas 
+                   se disfrutaron por nuestra generaci&#243;n. Mas aun ahora con los dispocitivos m&#243;viles, todas estas grandes series vuelven a estar al alcance de la mano.
+                    Esta pagina tiene como objetivo, informar sobre los mejores dibujos animados de hoy y de siempre.</p>
+               
+               <p id="p2">Los ni&#241;os de hoy nacen con una accesibilidad diferente a la tecnolog&#237;a. Esto les facilita el acceso a los dibujos animados que hace algunas d&#233;cadas 
+                   se disfrutaron por nuestra generaci&#243;n. Mas aun ahora con los dispocitivos m&#243;viles, todas estas grandes series vuelven a estar al alcance de la mano.
+                    Esta pagina tiene como objetivo, informar sobre los mejores dibujos animados de hoy y de siempre.</p>
+               <p id="p3">Los ni&#241;os de hoy nacen con una accesibilidad diferente a la tecnolog&#237;a. Esto les facilita el acceso a los dibujos animados que hace algunas d&#233;cadas 
+                   se disfrutaron por nuestra generaci&#243;n. Mas aun ahora con los dispocitivos m&#243;viles, todas estas grandes series vuelven a estar al alcance de la mano.
+                    Esta pagina tiene como objetivo, informar sobre los mejores dibujos animados de hoy y de siempre.</p>
             </div>
         </div>
 
