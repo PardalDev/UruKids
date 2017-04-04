@@ -3,9 +3,9 @@ body {
     margin: 0px;
     font-family: Arial;
     background-color: black;}
-body #commands table tr td a{
+body #commands #commandTable tr td a{
     text-decoration: none;}
-body #commands table tr #spacing{
+body #commands #commandTable tr #spacing{
     padding-left: 20px;}
 #header {
     width: 100%;
