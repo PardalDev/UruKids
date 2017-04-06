@@ -20,11 +20,14 @@
                 this.character2=character2;
             }
             var u = prompt("No estas registrado, por favor registra tu nombre de usuario: " );
-            while (u=="" || u.length < 4 ){
-                var u = prompt("Por favor ingresa un nombre valido, tu nombre debe tener al menos 4 letras:" );
+            /*Validar que sea solo texto*/
+            const regex = /\d/g;
+            while (u=="" || u.length < 4 || regex.exec(u)!==null ){
+                var u = prompt("Por favor ingresa un nombre valido, este debe contener unicamente letras. Recuerda ingresar al menos 4 digitos" );
             }
+            
             var p = prompt("Ingresa tu password de 4 digitos: " );
-            while (p=="" || p.length < 4  || p.length > 4){
+            while (p=="" || p.length < 4  || p.length > 4 ){
                 var p = prompt("Tu password debe tener exactamente 4 digitos:" );
             }
             var a = prompt("Confirma que eres mayor de 18 a&#241;os ingresando tu edad a continuacion: " );
@@ -38,7 +41,9 @@
             var c2 = prompt("Elige el 2do personaje: " );
 
             var userObject = new Usuario(u, p, a, c1, c2);
-            var result = prompt("El objeto es: " + userObject.user );
+            var result = alert("Te has logueado como: " + userObject.user );
+
+
         }
 	</script>
     <link rel="shortcut icon" href="resources/imagenes/Uruk.ico">
