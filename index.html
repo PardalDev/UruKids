@@ -7,7 +7,7 @@
     <meta name="description" content="El contenido de esta pagina describe los Dibujos animados que marcaron nuestra infancia" />
     <meta name="keywords" contant="Anime, cartoon, desarrollo web, kids, games" />
     <meta name="author" content="PardalDev" />
-    <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" >
     <!--charset para escribir en español -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script type="text/javascript">
@@ -19,29 +19,46 @@
                 this.character1=character1;
                 this.character2=character2;
             }
-            var u = prompt("No estas registrado, por favor registra tu nombre de usuario: " );
             /*Validar que sea solo texto*/
             const regex = /\d/g;
+            /*Validar que sea solo numeros*/
+            const regex2 = /\D/g;
+            var u = prompt("No estas registrado, por favor registra tu nombre de usuario: " ); 
+
             while (u=="" || u.length < 4 || regex.exec(u)!==null ){
                 var u = prompt("Por favor ingresa un nombre valido, este debe contener unicamente letras. Recuerda ingresar al menos 4 digitos" );
             }
+        
+            var p = prompt("Ingresa tu PIN de 4 digitos: " );
             
-            var p = prompt("Ingresa tu password de 4 digitos: " );
-            while (p=="" || p.length < 4  || p.length > 4 ){
-                var p = prompt("Tu password debe tener exactamente 4 digitos:" );
+            while (p=="" || p.length !== 4  || regex2.exec(p)!==null ){
+                var p = prompt("Tu PIN debe tener exactamente 4 digitos y las letras no son admitidas. Ingresa nuevamente:" );
             }
-            var a = prompt("Confirma que eres mayor de 18 a&#241;os ingresando tu edad a continuacion: " );
-            while (a=="" || parseInt(a) == NaN ){
-                    var a = prompt("Tu edad no debe contener caracteres, unicamente ingresa el numero correspondiente a tu edad:" );
-                    if(parseInt(a) < 18 ){
-                        var a = prompt("Debes ser mayor de 18 a&#241;os, ingresa nuevamente tu edad:" );
-                    }
-            }
-            var c1 = prompt("Elige 1 de los siguientes personajes: 1- Goku, 2-Sailor Moon: " );
-            var c2 = prompt("Elige el 2do personaje: " );
 
+            var a = prompt("Confirma que eres mayor de 18 a\u00F1os ingresando tu edad a continuacion: " );
+            while (a=="" || regex2.exec(a)!==null || a < 18){
+                    var a = prompt("Debes ser mayor de 18. Tu edad no debe contener caracteres, unicamente ingresa el numero correspondiente a tu edad: " );
+            }
+
+            var c1 = prompt("Elige uno de los siguientes personajes: 1- Goku, 2-Sailor Moon: " );
+            while (c1=="" || c1 > 2 || c1 < 1 || regex2.exec(c1)!==null ){
+                var c1 = prompt("Debes elegir una de las dos opciones siguientes: 1- Goku, 2-Sailor Moon " );
+            }
+            
+            if (c1==1){
+                var c2 = prompt("Elige el 2do personaje: 1-Oliver, 2-Homero, 3-Pedro " );
+                while (c2=="" || c2 > 3 || c2 < 1 || regex2.exec(c2)!==null ){
+                    var c2 = prompt("Debes elegir una de las opciones siguientes: 1-Oliver, 2-Homero, 3-Pedro " );
+                }
+            }else{
+                var c2 = prompt("Elige el 2do personaje: 1-Ranma, 2-Supersonico, 3-BugsBunny" );
+                while (c2=="" || c2 > 3 || c2 < 1 || regex2.exec(c2)!==null ){
+                    var c2 = prompt("Debes elegir una de las opciones siguientes: 1-Ranma, 2-Supersonico, 3-BugsBunny " );
+                }
+            }
+            
             var userObject = new Usuario(u, p, a, c1, c2);
-            var result = alert("Te has logueado como: " + userObject.user );
+            var result = alert("Te has logueado como: " + userObject.user +" "+ userObject.password + " " + userObject.age +" "+ userObject.character1+" "+ userObject.character2);
 
 
         }
