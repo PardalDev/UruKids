@@ -67,20 +67,18 @@
         }
         function logIN(){
             var u = prompt("Ingresa tu usuario: " ); 
-
-            while (u =! userObjectPublic.user ){
-                var u = prompt("Usuario incorrecto. Ingresa tu usuario:" );
-            }
-        
             var p = prompt("Ingresa tu PIN: " );
-            
-            while (p =! userObjectPublic.password){
-                var p = prompt("Tu PIN debe tener exactamente 4 digitos y las letras no son admitidas. Ingresa nuevamente:" );
+            if (u == userObjectPublic.user ){
+                if (p == userObjectPublic.password){
+                    document.getElementById('StatusUser').innerHTML="<span style='background-color: green'>  Loged in </span>";
+                    var uo= "<span style='background-color: green'>"+ userObjectPublic.user +"</span>";
+                    document.getElementById('ActiveUser').innerHTML=uo;
+                }else{
+                    var p = prompt("PIN Incorrecto." );
+                }
+            }else{
+                prompt("Usuario incorrecto." );
             }
-            alert("Gracias por registrarte, tu usuario es: "+ userObjectPublic.user + "\n Tu PIN para loguear en la pagina es: " +userObjectPublic.password  );
-            document.getElementById('StatusUser').innerHTML="<span style='background-color: green'>  Loged in </span>";
-            var uo= "<span style='background-color: green'>"+ userObjectPublic.user +"</span>";
-            document.getElementById('ActiveUser').innerHTML=uo;
         }
         function logOUT(){
             document.getElementById('StatusUser').innerHTML="<span style='background-color: white'></span>";
