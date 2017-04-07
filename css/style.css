@@ -110,7 +110,7 @@ body #commands #commandTable tr #spacing{
 #container #characterSelection ul #Serena:hover {
     background-color: lightseagreen;
     border-radius: 50%;}
-#container #characterSelection ul #Supersonico:hover {
+#container #characterSelection ul #Ash:hover {
     background-color: purple;
     border-radius: 50%;}
 #container #characterSelection ul #Pedro:hover {
@@ -127,7 +127,8 @@ body #commands #commandTable tr #spacing{
     color: white;
     text-align: center;}
 #container #Bienvenida #p1, #p2, #p3{
-    width: 100%;
+    width: 40%;
+    display: inline-block;
     background-color: darkgrey;
     border: 5px solid grey; 
     border-radius: 15%;}

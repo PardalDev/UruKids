@@ -41,9 +41,9 @@ function registro(){
             var c2 = prompt("Debes elegir una de las opciones siguientes: 1-Oliver, 2-Homero, 3-Pedro " );
         }
     }else{
-        var c2 = prompt("Elige el 2do personaje: 1-Ranma, 2-Supersonico, 3-BugsBunny" );
+        var c2 = prompt("Elige el 2do personaje: 1-Ranma, 2-Ash, 3-BugsBunny" );
         while (c2=="" || c2 > 3 || c2 < 1 || regex2.exec(c2)!==null ){
-            var c2 = prompt("Debes elegir una de las opciones siguientes: 1-Ranma, 2-Supersonico, 3-BugsBunny " );
+            var c2 = prompt("Debes elegir una de las opciones siguientes: 1-Ranma, 2-Ash, 3-BugsBunny " );
         }
     }
     
@@ -68,7 +68,7 @@ function logIN(){
                 document.getElementById(Char1[userObjectPublic.character2]).style.backgroundColor='yellow';
             }else{
                 document.getElementById("Serena").style.backgroundColor='yellow';
-                var Char2 = new Array("Serena","Ranma","Supersonico","BugsBunny");
+                var Char2 = new Array("Serena","Ranma","Ash","BugsBunny");
                 alert(Char2[userObjectPublic.character2]);
                 document.getElementById(Char2[userObjectPublic.character2]).style.backgroundColor='yellow';
             }
@@ -83,7 +83,7 @@ function logOUT(){
     document.getElementById('StatusUser').innerHTML="<span style='background-color: white'></span>";
     var uo= "\"<span style='background-color: white'></span>\"";
     document.getElementById('ActiveUser').innerHTML=uo;
-    var Char1 = new Array("Goku","Oliver","Homero","Pedro","Serena","Ranma","Supersonico","BugsBunny");
+    var Char1 = new Array("Goku","Oliver","Homero","Pedro","Serena","Ranma","Ash","BugsBunny");
     for(i in Char1){
         document.getElementById(Char1[i]).style.backgroundColor='black';
     } 
