@@ -126,12 +126,23 @@ body #commands #commandTable tr #spacing{
     width: 100%;
     color: white;
     text-align: center;}
-#container #Bienvenida #p1, #p2, #p3{
+#container #Bienvenida ul li {
+    list-style-type: none;
+    color: #1E90FF}
+#container #Bienvenida ul #Canal:hover {
+    background-color: white
+    }
+#container #Bienvenida #p1, #p2{
+    margin-left:230px;
+    font-size: 20px;
+    font-family: fantasy;
+    color: white;
+    padding: 50px;
     width: 40%;
     display: inline-block;
-    background-color: darkgrey;
+    background-color: #1E90FF;
     border: 5px solid grey; 
-    border-radius: 15%;}
+    border-radius: 5%;}
 #footer {
     background: black;
     height: 150px;
@@ -140,7 +151,8 @@ body #commands #commandTable tr #spacing{
     text-align: center;}
 
 #footer table {
-    width: 300px;
+    border-top: 2px solid #1E90FF;
+    width: 25%;
     height: 100px;
     margin: 0 auto;
     table-layout: fixed;
