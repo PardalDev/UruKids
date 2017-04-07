@@ -11,14 +11,16 @@
     <!--charset para escribir en español -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script type="text/javascript">
-        function registro(){
-            function Usuario(user, password, age, character1, character2){
+        function Usuario(user, password, age, character1, character2){
                 this.user=user;
 				this.password=password;
 				this.age=age;
                 this.character1=character1;
                 this.character2=character2;
-            }
+        }
+        var userObjectPublic = new Usuario();
+        
+        function registro(){
             /*Validar que sea solo texto*/
             const regex = /\d/g;
             /*Validar que sea solo numeros*/
@@ -58,9 +60,32 @@
             }
             
             var userObject = new Usuario(u, p, a, c1, c2);
-            var result = alert("Te has logueado como: " + userObject.user +" "+ userObject.password + " " + userObject.age +" "+ userObject.character1+" "+ userObject.character2);
+            userObjectPublic = userObject;
+            
+            alert("Gracias por registrarte, tu usuario es: "+ userObject.user + "\n Tu PIN para loguear en la pagina es: " +userObject.password  );
 
+        }
+        function logIN(){
+            var u = prompt("Ingresa tu usuario: " ); 
 
+            while (u =! userObjectPublic.user ){
+                var u = prompt("Usuario incorrecto. Ingresa tu usuario:" );
+            }
+        
+            var p = prompt("Ingresa tu PIN: " );
+            
+            while (p =! userObjectPublic.password){
+                var p = prompt("Tu PIN debe tener exactamente 4 digitos y las letras no son admitidas. Ingresa nuevamente:" );
+            }
+            alert("Gracias por registrarte, tu usuario es: "+ userObjectPublic.user + "\n Tu PIN para loguear en la pagina es: " +userObjectPublic.password  );
+            document.getElementById('StatusUser').innerHTML="<span style='background-color: green'>  Loged in </span>";
+            var uo= "<span style='background-color: green'>"+ userObjectPublic.user +"</span>";
+            document.getElementById('ActiveUser').innerHTML=uo;
+        }
+        function logOUT(){
+            document.getElementById('StatusUser').innerHTML="<span style='background-color: white'></span>";
+            var uo= "\"<span style='background-color: white'></span>\"";
+            document.getElementById('ActiveUser').innerHTML=uo;
         }
 	</script>
     <link rel="shortcut icon" href="resources/imagenes/Uruk.ico">
@@ -76,16 +101,32 @@
                     Register
                 </td>
                 <td id="spacing">
-                    <a href= "https://twitter.com/"><img src="resources/Imagenes/login.png" width="32px" onmouseover="this.src='resources/Imagenes/login3.png';" onmouseout="this.src='resources/Imagenes/login.png';" /></a>
+                    <a><img src="resources/Imagenes/login.png" width="32px" onmouseover="this.src='resources/Imagenes/login3.png';" onmouseout="this.src='resources/Imagenes/login.png';" onclick="logIN()"/></a>
                 </td>
                 <td>
                     Log in
                 </td>
                 <td id="spacing">
-                   <a href="https://www.youtube.com"><img src="resources/Imagenes/logout.png" width="32px" onmouseover="this.src='resources/Imagenes/logout2.png';" onmouseout="this.src='resources/Imagenes/logout.png';" /></a>
+                   <a><img src="resources/Imagenes/logout.png" width="32px" onmouseover="this.src='resources/Imagenes/logout2.png';" onmouseout="this.src='resources/Imagenes/logout.png';" onclick="logOUT()"/></a>
                 </td>
                 <td>
                     Log out
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: black; color: white;">
+                    Status:
+                </td>
+                <td id="StatusUser" colspan="2" style="color: white;">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: black; color: white;">
+                    User:
+                </td>
+                <td id="ActiveUser" colspan="2"  style="color: white;">
+                    
                 </td>
             </tr>
         </table>
