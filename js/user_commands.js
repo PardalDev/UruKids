@@ -30,7 +30,7 @@ function registro(){
             var a = prompt("Debes ser mayor de 18. Tu edad no debe contener caracteres, unicamente ingresa el numero correspondiente a tu edad: " );
     }
 
-    var c1 = prompt("Elige uno de los siguientes personajes: 1- Goku, 2-Sailor Moon: " );
+    var c1 = prompt("Elige uno de los siguientes personajes: 1- Goku, 2-Serena: " );
     while (c1=="" || c1 > 2 || c1 < 1 || regex2.exec(c1)!==null ){
         var c1 = prompt("Debes elegir una de las dos opciones siguientes: 1- Goku, 2-Sailor Moon " );
     }
@@ -61,6 +61,17 @@ function logIN(){
             document.getElementById('StatusUser').innerHTML="<span style='background-color: green'>  Loged in </span>";
             var uo= "<span style='background-color: green'>"+ userObjectPublic.user +"</span>";
             document.getElementById('ActiveUser').innerHTML=uo;
+
+            if(userObjectPublic.character1==1){
+                document.getElementById("Goku").style.backgroundColor='yellow';
+                var Char1 = new Array("Goku","Oliver","Homero","Pedro");
+                document.getElementById(Char1[userObjectPublic.character2]).style.backgroundColor='yellow';
+            }else{
+                document.getElementById("Serena").style.backgroundColor='yellow';
+                var Char2 = new Array("Serena","Ranma","Supersonico","BugsBunny");
+                alert(Char2[userObjectPublic.character2]);
+                document.getElementById(Char2[userObjectPublic.character2]).style.backgroundColor='yellow';
+            }
         }else{
             var p = prompt("PIN Incorrecto." );
         }
@@ -72,4 +83,8 @@ function logOUT(){
     document.getElementById('StatusUser').innerHTML="<span style='background-color: white'></span>";
     var uo= "\"<span style='background-color: white'></span>\"";
     document.getElementById('ActiveUser').innerHTML=uo;
+    var Char1 = new Array("Goku","Oliver","Homero","Pedro","Serena","Ranma","Supersonico","BugsBunny");
+    for(i in Char1){
+        document.getElementById(Char1[i]).style.backgroundColor='black';
+    } 
 }
