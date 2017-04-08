@@ -204,9 +204,6 @@ body #commands #commandTable tr #spacing{
     text-align: center;}
 #footerDragon table tr td a{
     text-decoration: none;}
-<<<<<<< HEAD
-/*Sailor Moon*/
-=======
 
 /*Sailor Moon*/
 #container #sailorMoonChars{
@@ -252,4 +249,4 @@ body #commands #commandTable tr #spacing{
     background-color: darkblue;
     border: 3px solid white;
     border-radius: 4%;}
->>>>>>> 9995d22b2f628f6ae59f53433fd9e418426d3831
+
