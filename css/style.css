@@ -238,7 +238,7 @@ body #commands #commandTable tr #spacing{
 #container #sailorMoonChars ul #SailorMercury:hover {
     background-color: darkcyan;
     border-radius: 50%;}
-#container #Bienvenida #p1smoon, #p2smoon, #p3smoon,#p4smoon, #p5smoon,{
+#container #Bienvenida #p1smoon, #p2smoon, #p3smoon,#p4smoon, #p5smoon{
     margin-left:230px;
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -249,4 +249,3 @@ body #commands #commandTable tr #spacing{
     background-color: darkblue;
     border: 3px solid white;
     border-radius: 4%;}
-
