@@ -170,14 +170,15 @@ body #commands #commandTable tr #spacing{
 #DragonDesc td{
     text-align: left;
     background: #D8D8D8;
+    color: black;
     font-size: 14px;
     padding: 25px;
     border-radius: 20px;
     -moz-border-radius: 20px;
     -webkit-border-radius:20px;
-    box-shadow:0px 0px 20px #000;
-    -moz-box-shadow:0px 0px 20px #000;
-    -webkit-box-shadow:0px 0px 20px #000;
+    box-shadow:0px 0px 200px #000;
+    -moz-box-shadow:0px 0px 200px #000;
+    -webkit-box-shadow:0px 0px 200px #000;
 }
 #footerDragon {
     background:#3d6a99;
