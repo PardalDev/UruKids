@@ -204,4 +204,52 @@ body #commands #commandTable tr #spacing{
     text-align: center;}
 #footerDragon table tr td a{
     text-decoration: none;}
+<<<<<<< HEAD
 /*Sailor Moon*/
+=======
+
+/*Sailor Moon*/
+#container #sailorMoonChars{
+    width: 100%;
+    background-color: sailorMoonChars;
+    text-align: center;}
+#container #sailorMoonChars ul li {
+    list-style-type: none;
+    display: inline;
+    background: sailorMoonChars;
+    font-weight: bold;
+    padding-top: 20px;}
+#container #sailorMoonChars ul li a {
+    text-decoration: none;
+    padding: 18px 10px 0px 8px;}
+#container #sailorMoonChars ul li:hover {
+    background-color: red;
+    border-radius: 50%;}
+
+#container #sailorMoonChars ul #SailorJupiter:hover {
+    background-color: green;
+    border-radius: 50%;}
+#container #sailorMoonChars ul #SailorVenus:hover {
+    background-color: gold;
+    border-radius: 50%;}
+#container #sailorMoonChars ul #SailorMoon:hover {
+    background-color: blue;
+    border-radius: 50%;}
+#container #sailorMoonChars ul #SailorMars:hover {
+    background-color: red;
+    border-radius: 50%;}
+#container #sailorMoonChars ul #SailorMercury:hover {
+    background-color: darkcyan;
+    border-radius: 50%;}
+#container #Bienvenida #p1smoon, #p2smoon, #p3smoon,#p4smoon, #p5smoon,{
+    margin-left:230px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 50px;
+    width: 40%;
+    display: inline-block;
+    background-color: darkblue;
+    border: 3px solid white;
+    border-radius: 4%;}
+>>>>>>> 9995d22b2f628f6ae59f53433fd9e418426d3831
