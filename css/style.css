@@ -204,9 +204,6 @@ body #commands #commandTable tr #spacing{
     text-align: center;}
 #footerDragon table tr td a{
     text-decoration: none;}
-<<<<<<< HEAD
-/*Sailor Moon*/
-=======
 
 /*Sailor Moon*/
 #container #sailorMoonChars{
@@ -241,7 +238,7 @@ body #commands #commandTable tr #spacing{
 #container #sailorMoonChars ul #SailorMercury:hover {
     background-color: darkcyan;
     border-radius: 50%;}
-#container #Bienvenida #p1smoon, #p2smoon, #p3smoon,#p4smoon, #p5smoon,{
+#container #Bienvenida #p1smoon, #p2smoon, #p3smoon,#p4smoon, #p5smoon{
     margin-left:230px;
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -252,4 +249,3 @@ body #commands #commandTable tr #spacing{
     background-color: darkblue;
     border: 3px solid white;
     border-radius: 4%;}
->>>>>>> 9995d22b2f628f6ae59f53433fd9e418426d3831
