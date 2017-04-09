@@ -41,7 +41,7 @@ function Check(){
     /*alert(sh.ball1 +" "+sh.ball2 +" "+sh.ball3 +" "+sh.ball4 +" "+sh.ball5 +" "+sh.ball6 +" "+sh.ball7 );*/
     j=0;
     if(sh.ball1==1 && sh.ball2==1 && sh.ball3==1 && sh.ball4==1 && sh.ball5==1 && sh.ball6==1 && sh.ball7==1){
-        document.getElementById('Dragon').style.display='initial';
+        /*document.getElementById('Dragon').style.display='initial';
         document.getElementById('DragonDesc').style.display='none';
         document.getElementById('Personaje1').style.display='none';
         document.getElementById('Personaje2').style.display='none';
@@ -52,9 +52,10 @@ function Check(){
         document.getElementById('Personaje7').style.display='none';
         document.getElementById('Personaje8').style.display='none';
         document.getElementById('Fire').style.display='initial';
-        document.getElementById('VideoTitle').style.display='none';
-        document.getElementById('Video1').style.display='none';
-        document.getElementById('Video2').style.display='none';
+        document.getElementById('VideoTitle').style.display='none';*/
+        document.getElementById('Bienvenida').style.display='none';
+        document.getElementById('Oculto').style.display='initial';
+        /*document.getElementById('Video2').style.display='none';
         document.getElementById('Video3').style.display='none';
         document.getElementById('Video4').style.display='none';
         document.getElementById('Bienvenida').style.backgroundColor='black';
@@ -63,7 +64,7 @@ function Check(){
         document.getElementsByClassName('DragonBody').style.backgroundColor='black';
         document.getElementById('slide').style.display='none';
         document.getElementById('menu').style.display='none';
-        document.getElementById('footerDragon').style.display='none';
+        document.getElementById('footerDragon').style.display='none';*/
     }
 }
 

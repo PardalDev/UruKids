@@ -287,3 +287,7 @@ body #commands #commandTable tr #spacing{
     border: 3px solid white;
     border-radius: 20px;
     }
+/*****************************************************************************************************************************************************/
+#VideoSelector ul li{
+    display: inline;
+}
