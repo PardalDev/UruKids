@@ -74,13 +74,10 @@ body #commands #commandTable tr #spacing{
     text-align: center;}
 #container #characterSelection{
     width: 100%;
-    background-color: black;
     text-align: center;}
 #container #characterSelection ul li {
     list-style-type: none;
     display: inline;
-    background: black;
-    font-weight: bold;
     padding-top: 20px;}
 #container #characterSelection ul li a {
     text-decoration: none;
@@ -210,6 +207,9 @@ body #commands #commandTable tr #spacing{
     text-align: center;}
 #footerDragon table tr td a{
     text-decoration: none;}
+#container #characterSelection ul #Goku2:hover {
+    background-color:green;
+    border-radius: 50%;}
 
 /*Sailor Moon*/
 #container #sailorMoonChars{
