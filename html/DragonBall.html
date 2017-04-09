@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="../resources/Imagenes/UruK.ico" />
 </head>
 
-<body style="background-color: 	#3d6a99;">
+<body class="DragonBody" style="background-color:#3d6a99;">
     <div id="header" class="divHead">
         <div id="logo">
             <a href="../index.html"><img src="../resources/Imagenes/urukids_logo.png" width="200px" /> </a>
@@ -45,15 +45,17 @@
                 </ul>
             </div>
             <div id="Bienvenida" style="float: left; margin-left: 0%;" >
-                 <ul id="ShengLong" style="float: right; margin-top:100px; ">
+                 <ul id="ShengLong" style="float: right; margin-top:100px;">
                     <li id="BallTitle"> DRAGON BALLS </li>
-                    <li id="Ball" id="sb1"> <a><img width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star2.png" onmouseover="this.src='../resources/Imagenes/DragonBall/1star.png';" onmouseout="this.src='../resources/Imagenes/DragonBall/1star2.png';" onclick="setMark(1);Check();"/></a></li>
-                    <li id="Ball" id="sb2"> <a><img width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star2.png" onmouseover="this.src='../resources/Imagenes/DragonBall/2star.png';" onmouseout="this.src='../resources/Imagenes/DragonBall/2star2.png';" onclick="setMark(2);Check();"/></a></li>
-                    <li id="Ball" id="sb3"> <a><img width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star2.png" onmouseover="this.src='../resources/Imagenes/DragonBall/3star.png';" onmouseout="this.src='../resources/Imagenes/DragonBall/3star2.png';" onclick="setMark(3);Check();"/></a></li>
-                    <li id="Ball" id="sb4"> <a><img width="50px" height="50px" src ="../resources/Imagenes/DragonBall/4star2.png" onmouseover="this.src='../resources/Imagenes/DragonBall/4star.png';" onmouseout="this.src='../resources/Imagenes/DragonBall/4star2.png';" onclick="setMark(4);Check();"/></a></li>
-                    <li id="Ball" id="sb5"> <a><img width="50px" height="50px" src ="../resources/Imagenes/DragonBall/5star2.png" onmouseover="this.src='../resources/Imagenes/DragonBall/5star.png';" onmouseout="this.src='../resources/Imagenes/DragonBall/5star2.png';" onclick="setMark(5);Check();"/></a></li>
-                    <li id="Ball" id="sb6"> <a><img width="50px" height="50px" src ="../resources/Imagenes/DragonBall/6star2.png" onmouseover="this.src='../resources/Imagenes/DragonBall/6star.png';" onmouseout="this.src='../resources/Imagenes/DragonBall/6star2.png';" onclick="setMark(6);Check();"/></a></li>
-                    <li id="Ball" id="sb7"> <a><img width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star2.png" onmouseover="this.src='../resources/Imagenes/DragonBall/7star.png';" onmouseout="this.src='../resources/Imagenes/DragonBall/7star2.png';" onclick="setMark(7);Check();"/></a></li>
+                    <li id="Ball"><a><img width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star2.png" onclick="this.src='../resources/Imagenes/DragonBall/1star.png';setMark(1);Check();"></a></li>
+                    <li id="Ball" id="sb2"> <a><img width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star2.png" onclick="this.src='../resources/Imagenes/DragonBall/2star.png';setMark(2);Check();"/></a></li>
+                    <li id="Ball" id="sb3"> <a><img width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star2.png" onclick="this.src='../resources/Imagenes/DragonBall/3star.png';setMark(3);Check();"/></a></li>
+                    <li id="Ball" id="sb4"> <a><img width="50px" height="50px" src ="../resources/Imagenes/DragonBall/4star2.png" onclick="this.src='../resources/Imagenes/DragonBall/4star.png';setMark(4);Check();"/></a></li>
+                    <li id="Ball" id="sb5"> <a><img width="50px" height="50px" src ="../resources/Imagenes/DragonBall/5star2.png" onclick="this.src='../resources/Imagenes/DragonBall/5star.png';setMark(5);Check();"/></a></li>
+                    <li id="Ball" id="sb6"> <a><img width="50px" height="50px" src ="../resources/Imagenes/DragonBall/6star2.png" onclick="this.src='../resources/Imagenes/DragonBall/6star.png';setMark(6);Check();"/></a></li>
+                    <li id="Ball" id="sb7"> <a><img width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star2.png" onclick="this.src='../resources/Imagenes/DragonBall/7star.png';setMark(7);Check();"/></a></li>
+                    <li style="display:none; position:absolute; margin-left:-65%; margin-top:-40%"; id="Fire"><a><img width="100%" height="1200px" src ="../resources/Imagenes/DragonBall/fire-5.gif"/></a></li>
+                    <li style="display:none; position:absolute; margin-left:-65%; margin-top:-35%"; id="Dragon"><a><img width="1000px" height="1000px" src ="../resources/Imagenes/DragonBall/Sheng2.png"/></a></li>
                 </ul>
                 <table id="DragonDesc" cellspacing="150" style="position: absolute; margin-left: 25%">
                     <tr>
@@ -89,14 +91,14 @@
                         </td>
                     </tr>
                 </table>
-                <a style="position: absolute; margin-top:0%; margin-left:16%;"><img width="350px" height="500px" src ="../resources/Imagenes/DragonBall/Cell.png"/></a>
-                <a style="position: absolute; margin-top:0%; margin-left:-20%;"><img width="350px" height="500px" src ="../resources/Imagenes/DragonBall/Cell2.png"/></a>
-                <a style="position: absolute; margin-top:25%; margin-left:16%;"><img width="300px" height="450px" src ="../resources/Imagenes/DragonBall/Freez.png"/></a>
-                <a style="position: absolute; margin-top:25%; margin-left:-17%;"><img width="300px" height="450px" src ="../resources/Imagenes/DragonBall/Freez2.png"/></a>
-                <a style="position: absolute; margin-top:48%; margin-left:-15%;"><img width="200px" height="450px" src ="../resources/Imagenes/DragonBall/MBoo.png"/></a>
-                <a style="position: absolute; margin-top:48%; margin-left:16%;"><img width="350px" height="450px" src ="../resources/Imagenes/DragonBall/MBoo2.png"/></a>
-                <a style="position: absolute; margin-top:70%; margin-left:-20%;"><img width="350px" height="450px" src ="../resources/Imagenes/DragonBall/Vegeta.png"/></a>
-                <a style="position: absolute; margin-top:70%; margin-left:16%;"><img width="350px" height="450px" src ="../resources/Imagenes/DragonBall/Broly.png"/></a>
+                <a id="Personaje1" style="position: absolute; margin-top:0%; margin-left:16%;"><img width="350px" height="500px" src ="../resources/Imagenes/DragonBall/Cell.png"/></a>
+                <a id="Personaje2" style="position: absolute; margin-top:0%; margin-left:-20%;"><img width="350px" height="500px" src ="../resources/Imagenes/DragonBall/Cell2.png"/></a>
+                <a id="Personaje3" style="position: absolute; margin-top:25%; margin-left:16%;"><img width="300px" height="450px" src ="../resources/Imagenes/DragonBall/Freez.png"/></a>
+                <a id="Personaje4" style="position: absolute; margin-top:25%; margin-left:-17%;"><img width="300px" height="450px" src ="../resources/Imagenes/DragonBall/Freez2.png"/></a>
+                <a id="Personaje5" style="position: absolute; margin-top:48%; margin-left:-15%;"><img width="200px" height="450px" src ="../resources/Imagenes/DragonBall/MBoo.png"/></a>
+                <a id="Personaje6" style="position: absolute; margin-top:48%; margin-left:16%;"><img width="350px" height="450px" src ="../resources/Imagenes/DragonBall/MBoo2.png"/></a>
+                <a id="Personaje7" style="position: absolute; margin-top:70%; margin-left:-20%;"><img width="350px" height="450px" src ="../resources/Imagenes/DragonBall/Vegeta.png"/></a>
+                <a id="Personaje8" style="position: absolute; margin-top:70%; margin-left:16%;"><img width="350px" height="450px" src ="../resources/Imagenes/DragonBall/Broly.png"/></a>
 
                 <ul style="float: left; margin-top:100px; ">
                     <li id="VideoTitle"> WATCH NOW!! </li>
