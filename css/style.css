@@ -210,7 +210,10 @@ body #commands #commandTable tr #spacing{
 #container #characterSelection ul #Goku2:hover {
     background-color:green;
     border-radius: 50%;}
-
+#container #Bienvenida #ShengLong{
+    background-color: red;
+    margin-top: 100px;
+}
 /*Sailor Moon*/
 #container #sailorMoonChars{
     width: 100%;
