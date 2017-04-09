@@ -164,8 +164,7 @@ body #commands #commandTable tr #spacing{
     width: 800px;
     height: 500px;
     table-layout: fixed;
-    text-align:center;     
-}
+    text-align:center;}
 #DragonDesc td{
     text-align: left;
     background: #D8D8D8;
@@ -177,16 +176,13 @@ body #commands #commandTable tr #spacing{
     -webkit-border-radius:20px;
     box-shadow:0px 0px 200px #000;
     -moz-box-shadow:0px 0px 200px #000;
-    -webkit-box-shadow:0px 0px 200px #000;
-}
+    -webkit-box-shadow:0px 0px 200px #000;}
 @font-face {
     font-family: 'saiyan_sansregular';
     src: url('../resources/Fuentes/saiyan-sans-webfont.woff2') format('woff2'),
          url('../resources/Fuentes/saiyan-sans-webfont.woff') format('woff');
     font-weight: normal;
-    font-style: normal;
-
-}
+    font-style: normal;}
 #container #Bienvenida ul #BallTitle, #VideoTitle{
     font-size: 40px;
     font-weight: bold;
@@ -195,11 +191,9 @@ body #commands #commandTable tr #spacing{
     text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
     word-spacing: 3px;
     letter-spacing: 3px;
-    font-weight: bold;
-}
+    font-weight: bold;}
 #container #Bienvenida ul #Ball:hover {
-    background-color: white
-}
+    background-color: white}
 #footerDragon {
     background:#3d6a99;
     margin-top: 110%;
