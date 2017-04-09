@@ -207,8 +207,35 @@ body #commands #commandTable tr #spacing{
     text-align: center;}
 #footerDragon table tr td a{
     text-decoration: none;}
+#container #characterSelection ul #Goku1:hover {
+    background-color: goldenrod;
+    border-radius: 50%;}    
 #container #characterSelection ul #Goku2:hover {
     background-color:green;
+    border-radius: 50%;}
+#container #characterSelection ul #Goku3:hover {
+    background-color: blue;
+    border-radius: 50%;}
+#container #characterSelection ul #Goku4:hover {
+    background-color: red;
+    border-radius: 50%;}
+#container #characterSelection ul #Goku5:hover {
+    background-color: yellowgreen;
+    border-radius: 50%;}    
+#container #characterSelection ul #Goku6:hover {
+    background-color: darkmagenta;
+    border-radius: 50%;}
+#container #characterSelection ul #Goku7:hover {
+    background-color: forestgreen;
+    border-radius: 50%;}
+#container #characterSelection ul #Goku8:hover {
+    background-color: blue;
+    border-radius: 50%;}
+#container #characterSelection ul #Goku9:hover {
+    background-color: red;
+    border-radius: 50%;}
+#container #characterSelection ul #Goku10:hover {
+    background-color: yellowgreen;
     border-radius: 50%;}
 
 /*Sailor Moon*/
