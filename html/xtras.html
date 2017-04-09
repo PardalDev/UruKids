@@ -8,6 +8,7 @@
     <meta name="author" content="Mariana" />
     <meta http-equiv="content type" content="text/html;charset=iso-8859-1" />
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <script type="text/javascript" src="../js/game.js"></script>
     <link rel="shortcut icon" href="../resources/Imagenes/UruK.ico" />
 </head>
 
@@ -29,10 +30,98 @@
             <img class="mySlides" src="../resources/Imagenes/coming-soon.png" >
         </div>
         <div id="container" class="divContainer">
-
-
+            <center>
+                <table style="border: 4px solid white; color:beige;border-spacing: 15px; text-align: center">
+                    <tr>
+                        <td colspan="2">
+                            <button style="height:100%; width:100%;" onclick="begin()">START</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img id="Ball1" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star2.png" onclick="choose('Ball1');Check();"/>
+                            <img id="Ball1_1" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star.png"/> 
+                            <img id="Ball1_2" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star.png"/>
+                            <img id="Ball1_3" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star.png"/> 
+                            <img id="Ball1_4" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/4star.png"/> 
+                            <img id="Ball1_5" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/5star.png"/> 
+                            <img id="Ball1_6" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/6star.png"/>
+                            <img id="Ball1_7" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star.png"/>                                                        
+                        </td>
+                        <td>
+                            <img id="Ball2" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star2.png" onclick="choose('Ball2');Check();"/>
+                            <img id="Ball2_1" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star.png"/> 
+                            <img id="Ball2_2" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star.png"/>
+                            <img id="Ball2_3" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star.png"/> 
+                            <img id="Ball2_4" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/4star.png"/> 
+                            <img id="Ball2_5" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/5star.png"/> 
+                            <img id="Ball2_6" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/6star.png"/>
+                            <img id="Ball2_7" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star.png"/>                                                      
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img id="Ball3" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/4star2.png" onclick="choose('Ball3');Check();"/>
+                            <img id="Ball3_1" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star.png"/> 
+                            <img id="Ball3_2" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star.png"/>
+                            <img id="Ball3_3" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star.png"/> 
+                            <img id="Ball3_4" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/4star.png"/> 
+                            <img id="Ball3_5" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/5star.png"/> 
+                            <img id="Ball3_6" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/6star.png"/>
+                            <img id="Ball3_7" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star.png"/>                          
+                        </td>
+                        <td>
+                            <img id="Ball4" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/5star2.png" onclick="choose('Ball4');Check();"/>
+                            <img id="Ball4_1" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star.png"/> 
+                            <img id="Ball4_2" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star.png"/>
+                            <img id="Ball4_3" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star.png"/> 
+                            <img id="Ball4_4" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/4star.png"/> 
+                            <img id="Ball4_5" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/5star.png"/> 
+                            <img id="Ball4_6" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/6star.png"/>
+                            <img id="Ball4_7" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star.png"/>                                                       
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img id="Ball5" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/6star2.png" onclick="choose('Ball5');Check();"/>
+                            <img id="Ball5_1" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star.png"/> 
+                            <img id="Ball5_2" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star.png"/>
+                            <img id="Ball5_3" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star.png"/> 
+                            <img id="Ball5_4" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/4star.png"/> 
+                            <img id="Ball5_5" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/5star.png"/> 
+                            <img id="Ball5_6" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/6star.png"/>
+                            <img id="Ball5_7" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star.png"/>                                                        
+                        </td>
+                        <td>
+                            <img id="Ball6" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star2.png" onclick="choose('Ball6');Check();"/>
+                            <img id="Ball6_1" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star.png"/> 
+                            <img id="Ball6_2" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star.png"/>
+                            <img id="Ball6_3" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star.png"/> 
+                            <img id="Ball6_4" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/4star.png"/> 
+                            <img id="Ball6_5" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/5star.png"/> 
+                            <img id="Ball6_6" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/6star.png"/>
+                            <img id="Ball6_7" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star.png"/>                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <img id="Ball7" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star2.png" onclick="choose('Ball7');Check();"/>
+                            <img id="Ball7_1" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star.png"/> 
+                            <img id="Ball7_2" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star.png"/>
+                            <img id="Ball7_3" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star.png"/> 
+                            <img id="Ball7_4" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/4star.png"/> 
+                            <img id="Ball7_5" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/5star.png"/> 
+                            <img id="Ball7_6" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/6star.png"/>
+                            <img id="Ball7_7" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star.png"/> 
+                        </td>
+                    </tr>
+                        <td colspan="2">
+                            <img id="loading" style="display: none" width="100%" height="50px" src ="../resources/Imagenes/Loading_ani.gif"/>
+                        </td>
+                    </tr>
+                </table>
+            </center>
         </div>
-
         <div id="footer">
             </br>
             <table id="table">
