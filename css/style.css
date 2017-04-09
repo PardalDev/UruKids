@@ -127,8 +127,7 @@ body #commands #commandTable tr #spacing{
     color: white;
     text-align: center;}
 #container #Bienvenida ul li {
-    list-style-type: none;
-    color: #1E90FF}
+    list-style-type: none;}
 #container #Bienvenida ul #Canal:hover {
     background-color: white
     }
@@ -160,7 +159,7 @@ body #commands #commandTable tr #spacing{
 
 #footer table tr td a{
     text-decoration: none;}
-/*Estilo de Dragon ball*/
+/*Estilo de Dragon ball *****************************************************************************************************/
 #DragonDesc{
     width: 800px;
     height: 500px;
@@ -180,10 +179,23 @@ body #commands #commandTable tr #spacing{
     -moz-box-shadow:0px 0px 200px #000;
     -webkit-box-shadow:0px 0px 200px #000;
 }
-#container #Bienvenida ul #BallTitle{
-    font-size: 20px;
+@font-face {
+    font-family: 'saiyan_sansregular';
+    src: url('../resources/Fuentes/saiyan-sans-webfont.woff2') format('woff2'),
+         url('../resources/Fuentes/saiyan-sans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+#container #Bienvenida ul #BallTitle, #VideoTitle{
+    font-size: 40px;
     font-weight: bold;
     color: orange;
+    font-family: 'saiyan_sansregular';
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    font-weight: bold;
 }
 #container #Bienvenida ul #Ball:hover {
     background-color: white
