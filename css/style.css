@@ -189,8 +189,7 @@ body #commands #commandTable tr #spacing{
     word-spacing: 3px;
     letter-spacing: 3px;
     font-weight: bold;}
-#container #Bienvenida ul #Ball:hover {
-    /*background-color: white*/}
+
 #footerDragon {
     background:#3d6a99;
     margin-top: 110%;
@@ -287,6 +286,28 @@ body #commands #commandTable tr #spacing{
     border: 3px solid white;
     border-radius: 20px;
     }
+#menuSailorMoon {
+    border: 1px solid #021148;
+    width: 100%;
+    height: 50px;
+    background-color: #021148;
+    text-align: center;}
+#menuSailorMoon ul li {
+    list-style-type: none;
+    display: inline;
+    background: #021148;
+    font-size: 30px;
+    font-weight: bold;}
+
+#menuSailorMoon ul li a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    padding: 18px 10px 0px 8px;}
+
+#menuSailorMoon ul li a:hover {
+    background-color: white;
+    color:#021148;}
 /*****************************************************************************************************************************************************/
 #VideoSelector ul li{
     display: inline;
