@@ -190,7 +190,7 @@ body #commands #commandTable tr #spacing{
     letter-spacing: 3px;
     font-weight: bold;}
 #container #Bienvenida ul #Ball:hover {
-    background-color: white}
+    /*background-color: white*/}
 #footerDragon {
     background:#3d6a99;
     margin-top: 110%;
@@ -238,7 +238,11 @@ body #commands #commandTable tr #spacing{
     background-color: yellowgreen;
     border-radius: 50%;}
 
-/*Sailor Moon*/
+#Ball{
+    margin-top:50px;
+}
+
+/*Sailor Moon*****************************************************************************************************************/
 #container #sailorMoonChars{
     width: 100%;
     background-color: sailorMoonChars;
