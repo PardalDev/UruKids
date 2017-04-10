@@ -31,7 +31,7 @@
         </div>
         <div id="container" class="divContainer">
             <center>
-                <table style="border: 4px solid white; color:beige;border-spacing: 15px; text-align: center">
+                <table id="GameTable" style="position: relative; margin-left:10%;">
                     <tr>
                         <td colspan="2">
                             <button style="height:100%; width:100%;" onclick="begin()">START</button>
@@ -39,7 +39,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img id="Ball1" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star2.png" onclick="choose('Ball1');Check();"/>
+                            <img id="Ball1" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star2.png" onclick="choose('1')"/>
                             <img id="Ball1_1" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star.png"/> 
                             <img id="Ball1_2" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star.png"/>
                             <img id="Ball1_3" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star.png"/> 
@@ -49,7 +49,7 @@
                             <img id="Ball1_7" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star.png"/>                                                        
                         </td>
                         <td>
-                            <img id="Ball2" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star2.png" onclick="choose('Ball2');Check();"/>
+                            <img id="Ball2" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star2.png" onclick="choose('2')"/>
                             <img id="Ball2_1" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star.png"/> 
                             <img id="Ball2_2" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star.png"/>
                             <img id="Ball2_3" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star.png"/> 
@@ -61,7 +61,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img id="Ball3" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/4star2.png" onclick="choose('Ball3');Check();"/>
+                            <img id="Ball3" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star2.png" onclick="choose('3');"/>
                             <img id="Ball3_1" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star.png"/> 
                             <img id="Ball3_2" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star.png"/>
                             <img id="Ball3_3" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star.png"/> 
@@ -71,7 +71,7 @@
                             <img id="Ball3_7" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star.png"/>                          
                         </td>
                         <td>
-                            <img id="Ball4" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/5star2.png" onclick="choose('Ball4');Check();"/>
+                            <img id="Ball4" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/4star2.png" onclick="choose('4');"/>
                             <img id="Ball4_1" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star.png"/> 
                             <img id="Ball4_2" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star.png"/>
                             <img id="Ball4_3" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star.png"/> 
@@ -83,7 +83,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img id="Ball5" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/6star2.png" onclick="choose('Ball5');Check();"/>
+                            <img id="Ball5" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/5star2.png" onclick="choose('5');"/>
                             <img id="Ball5_1" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star.png"/> 
                             <img id="Ball5_2" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star.png"/>
                             <img id="Ball5_3" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star.png"/> 
@@ -93,7 +93,7 @@
                             <img id="Ball5_7" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star.png"/>                                                        
                         </td>
                         <td>
-                            <img id="Ball6" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star2.png" onclick="choose('Ball6');Check();"/>
+                            <img id="Ball6" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/6star2.png" onclick="choose('6');"/>
                             <img id="Ball6_1" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star.png"/> 
                             <img id="Ball6_2" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star.png"/>
                             <img id="Ball6_3" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star.png"/> 
@@ -105,7 +105,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <img id="Ball7" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star2.png" onclick="choose('Ball7');Check();"/>
+                            <img id="Ball7" style="display: initial" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star2.png" onclick="choose('7');"/>
                             <img id="Ball7_1" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/1star.png"/> 
                             <img id="Ball7_2" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/2star.png"/>
                             <img id="Ball7_3" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/3star.png"/> 
