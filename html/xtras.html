@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="../resources/Imagenes/UruK.ico" />
 </head>
 
-<body>
+<body style="background-color:#000033;">
     <div id="header" class="divHead" >
         <div id="logo">
             <a href="../index.html"><img src="../resources/Imagenes/urukids_logo.png" width="200px" /> </a>
@@ -29,9 +29,14 @@
         <div id="slide" class="Slider">
             <img class="mySlides" src="..\resources\Imagenes\DragonBall\Dragon_Ball_logo_2.png" >
         </div>
-        <div id="container" class="divContainer" style="display: none" >
+        <div id="container" class="divContainer" style="display: initial; background-color:#000033;" >
             <center>
                 <table id="GameTable" style="position: relative; margin-left:0%;">
+                    <tr>
+                        <td colspan="2">
+                            <img id="Radar" width="200px" height="250px" src ="../resources/Imagenes/DragonBall/radar.gif"/>
+                        </td>
+                    </tr>
                     <tr>
                         <td colspan="2">
                             <button style="height:100%; width:100%;" onclick="begin()">START</button>
@@ -114,16 +119,18 @@
                             <img id="Ball7_6" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/6star.png"/>
                             <img id="Ball7_7" style="display: none" width="50px" height="50px" src ="../resources/Imagenes/DragonBall/7star.png"/> 
                         </td>
+                    </tr>
                 </table>
-                <a style="position: absolute; margin-top:-30%; margin-left: -32%;"><img width="311px" height="800px" src="../resources/Imagenes/DragonBall/Bulma.png" /></a>
-                <a style="position: absolute; margin-top:-30%; margin-left: 13%;"><img width="469px" height="800px" src="../resources/Imagenes/DragonBall/Goku_with_dragon_radar.png" /></a>
+                <a style="position: absolute; margin-top:-40%; margin-left: -35%;"><img width="311px" height="800px" src="../resources/Imagenes/DragonBall/Bulma.png" /></a>
+                <a style="position: absolute; margin-top:-40%; margin-left: 15%;"><img width="469px" height="800px" src="../resources/Imagenes/DragonBall/Goku_with_dragon_radar.png" /></a>
+                <a style="position: absolute; margin-top:-20%; margin-left: -20%;"><img width="220px" height="450px" src="../resources/Imagenes/DragonBall/Puar2.png" /></a>
+                <a style="position: absolute; margin-top:-20%; margin-left: 10%;"><img width="220px" height="450px" src="../resources/Imagenes/DragonBall/ulon.png" /></a>
             </center>
         </div>
         <div id="VideoDiv" style="display: initial">
-            <img id="Radar" width="200px" height="250px" style="position: absolute; margin-top: 0%; margin-left: -20%;" src ="../resources/Imagenes/DragonBall/radar.gif"/> 
             <iframe id=drag width="800" height="600" src="" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div id="footer">
+        <div id="footer" style="background-color:#000033;">
             </br>
             <table id="table">
                 <tr>
