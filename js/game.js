@@ -1,8 +1,9 @@
 var juegoEnCurso =new Array(0,0,0,0,0,0,0);
+var contadorDeClicks=0;
 
 function begin(){
     if(estaCompleto()==true){
-        alert(juegoEnCurso);
+        alert("Juego en curso. Terminalo para poder volver a comenzar!");
     }else{
         var i =0;
         while (i < juegoEnCurso.length){
@@ -12,11 +13,10 @@ function begin(){
                 i++;
             }
         }
-        alert(juegoEnCurso);
+        alert("El Juego ha comenzado!!, Encuentra las esferas del Dragon en orden");
     }
 }
 function reset(){
-    juegoEnCurso=(0,0,0,0,0,0,0);
     contadorDeClicks=0;
     document.getElementById('Ball1').style.display='initial';
     document.getElementById('Ball2').style.display='initial';
@@ -47,7 +47,7 @@ function estaCompleto(){
     var completo=true;
     for(j in juegoEnCurso){
         if(juegoEnCurso[j]==0){
-           var completo=false;
+           completo=false;
         }
     }
     return completo;
@@ -60,20 +60,85 @@ function  validarSiExiste(x){
     }
     return false;
 } 
-
 function choose(seleccion){
     if(estaCompleto()==true){
+        contadorDeClicks=contadorDeClicks+1;
         var ballPressed="Ball"+seleccion;
         document.getElementById(ballPressed).style.display='none';
         
         var ballToDysplay = "Ball"+seleccion+"_"+juegoEnCurso[seleccion-1];
         document.getElementById(ballToDysplay).style.display='initial';
+        var pos = seleccion-1;
+        check(pos);
     }else{
         alert("Presione START para comenzar!");
     }
-    check();
 }
-
+function vectorToString(vector){
+    var linea="";
+    for (i in vector){
+        linea=linea+vector[i];
+    }
+    alert (linea);
+    return linea;
+}
+function check(posicion){
+    if(juegoEnCurso[posicion] == contadorDeClicks){
+        if(contadorDeClicks==7){
+            alert("GANASTE");
+            reset();
+            juegoEnCurso =new Array(0,0,0,0,0,0,0);
+        }
+    }else{
+        alert("FALLASTE!!");
+        reset();
+    }
+}
+   /* contadorDeClicks=contadorDeClicks+1;
+    switch (contadorDeClicks) {
+    case 1:
+        if(estadoVector != "1000000"){
+            reset();
+        }
+        break;
+    case 2:
+        if(estadoVector != "1100000"){
+            reset();
+        }
+        break;
+    case 3:
+        if(estadoVector != "1110000"){
+            reset();
+        }
+        break;
+    case 4:
+        if(estadoVector != "1111000"){
+            reset();
+        }
+        break;
+    case 5:
+        if(estadoVector != "1111100"){
+            reset();
+        }
+        break;
+    case 6:
+        if(estadoVector != "1111110"){
+            reset();
+        }
+        break;
+    case 7:
+        if(estadoVector != "1111111"){
+            reset();
+        }
+    default:
+        if(contadorDeClicks==7 && estadoVector == "1111111"){
+            alert("GANASTE!!!!!!!");
+            reset(); 
+        }else{
+            alert("ERROR :/");
+        }
+        break;
+    }*/
 /*******************************************************************/
 
 /*
