@@ -328,3 +328,7 @@ body #commands #commandTable tr #spacing{
     width: 100px;
     height: 100px;
 }
+#GameTable tr td #Radar:hover{
+    width: 200px;
+    height: 250px;
+}
